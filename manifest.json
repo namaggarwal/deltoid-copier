@@ -1,0 +1,23 @@
+{
+    "name": "Deltoid Copier",
+    "description": "Extension to help easy copy/pasting of values from Deltoid",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "app/index.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.internalfb.com/intern/deltoid3/*"
+            ],
+            "js": [
+                "app/copier.js"
+            ]
+        }
+    ]
+}

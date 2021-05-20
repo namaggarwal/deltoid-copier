@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .container{
+      min-width: 150px;
+    }
+    .listItem{
+      cursor: pointer;
+      font-size: 12px;
+      padding: 4px 2px;
+    }
+    .listItem:hover {
+      font-weight:bold;
+    }
+    .title{
+      font-size: 16px;
+      border-bottom: 1px solid #bbb;
+      margin-bottom: 2px;
+      padding-bottom: 2px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">Deltoid Copier</div>
+    <div id="copyAllData" class="listItem">Copy all data</div>
+    <div id="copyNames" class="listItem">Copy names</div>
+    <div id="copyValues" class="listItem">Copy values</div>
+  </div>
+  <script src="/app/popup.js"></script>
+</body>
+
+</html>
